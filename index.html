@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Eletricista Silva | Alta Engenharia Elétrica</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&amp;family=Inter:wght@400;500;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#fffbff",
+                        "on-background": "#101d23",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#f3faff",
+                        "primary-container": "#db322f",
+                        "secondary-fixed-dim": "#a2c9ff",
+                        "on-tertiary-fixed-variant": "#004e5d",
+                        "on-primary-fixed-variant": "#93000d",
+                        "outline-variant": "#e4beb9",
+                        "on-surface-variant": "#5b403d",
+                        "inverse-primary": "#ffb4ac",
+                        "surface-tint": "#bb171c",
+                        "tertiary": "#006578",
+                        "surface-container-low": "#e8f6fd",
+                        "secondary-fixed": "#d3e4ff",
+                        "surface-container": "#e2f0f7",
+                        "on-surface": "#101d23",
+                        "on-tertiary": "#ffffff",
+                        "secondary-container": "#47a1ff",
+                        "surface-container-highest": "#d7e5ec",
+                        "error": "#ba1a1a",
+                        "background": "#f3faff",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#008097",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface": "#f3faff",
+                        "surface-variant": "#d7e5ec",
+                        "inverse-on-surface": "#e5f3fa",
+                        "on-error": "#ffffff",
+                        "outline": "#906f6c",
+                        "surface-container-high": "#dceaf2",
+                        "primary-fixed-dim": "#ffb4ac",
+                        "on-secondary-fixed-variant": "#004881",
+                        "secondary": "#0060a8",
+                        "on-secondary-fixed": "#001c38",
+                        "brand-urgent": "#E53935",
+                        "brand-trust": "#1E88E5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "section-gap": "120px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Archivo Narrow"],
+                        "label-mono": ["JetBrains Mono"],
+                        "body-lg": ["Inter"],
+                        "display-xl": ["Archivo Narrow"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["40px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "label-mono": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-xl": ["72px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .asymmetric-border {
+            border-left: 2px solid #b7131a;
+        }
+        .flat-outline {
+            border: 1px solid rgba(33, 33, 33, 0.1);
+        }
+        ::selection {
+            background: #b7131a;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- Top Navigation -->
+<nav class="w-full top-0 sticky bg-background z-50 border-b-2 border-on-background/10">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-unit max-w-container-max mx-auto">
+<div class="font-headline-lg text-headline-lg text-primary italic">Eletricista Silva</div>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-background hover:text-primary transition-colors duration-300" href="#servicos">Serviços</a>
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-background hover:text-primary transition-colors duration-300" href="#projetos">Projetos</a>
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-background hover:text-primary transition-colors duration-300" href="#sobre">Sobre</a>
+<a class="font-body-md text-body-md uppercase tracking-widest text-on-background hover:text-primary transition-colors duration-300" href="#contato">Contato</a>
+</div>
+<a class="bg-brand-urgent text-white px-6 py-3 font-label-mono uppercase transition-all duration-200 hover:bg-on-background active:scale-95" href="https://wa.me/5511963080179">
+                Agendar Agora
+            </a>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="min-h-[80vh] flex flex-col md:flex-row items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop gap-section-gap pt-10 md:pt-20">
+<div class="w-full md:w-3/5 text-left order-2 md:order-1">
+<span class="font-label-mono text-brand-trust block mb-4">EST. 2024 / SÃO PAULO</span>
+<h1 class="font-display-xl text-display-xl uppercase leading-tight mb-8">
+                    Soluções técnicas <br/>
+<span class="text-brand-urgent">rápidas e seguras</span> <br/>
+                    para você.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-12">
+                    Especialistas em infraestrutura elétrica de alta complexidade. Atendimento imediato em São Paulo com foco em precisão técnica e segurança normativa.
+                </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-brand-urgent text-white px-8 py-4 font-label-mono uppercase flex items-center gap-2 hover:bg-on-background transition-colors" href="https://wa.me/5511963080179">
+<span class="material-symbols-outlined">bolt</span>
+                        Solução Imediata
+                    </a>
+</div>
+</div>
+<div class="w-full md:w-2/5 order-1 md:order-2">
+<div class="aspect-[4/5] bg-surface-variant relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ9gr6Rr6CsLNMhJw27YFMYgwgP7zWPytWHmjwnozksdkA0pCbRs48d79ouyS6i14jM7sgw7dqg-C128nwKkyC7OH8QmEE6I1yWncLrvC0Oro3ENCepHmufh8KuH8HmawPy4tKONx7Mq30OCicNIWS4ue3XB1zMQyyFVN7MDeSiXlOyAmn5DJkMpdaUetENTNixE_mpcIx7cQY3-hy6pLfOTt2WugKoktp29ckBW8JK9YarFEVM6qLY8-UOpA_PCe0SYFkNGVUjewU"/>
+<div class="absolute bottom-0 left-0 bg-brand-urgent text-white p-6 font-label-mono">
+                        EMERGÊNCIA 24H
+                    </div>
+</div>
+</div>
+</section>
+<!-- Services/Approach Bento -->
+<section class="py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop" id="servicos">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-stretch">
+<div class="md:col-span-4 flex flex-col justify-center">
+<h2 class="font-headline-lg text-headline-lg mb-6 asymmetric-border pl-6 uppercase">Nossa Atuação</h2>
+<p class="font-body-md text-on-surface-variant mb-8">
+                        Não somos apenas eletricistas. Somos engenheiros da sua tranquilidade, operando sob os mais rígidos padrões da NBR 5410.
+                    </p>
+</div>
+<div class="md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="flat-outline p-10 bg-white hover:bg-surface-container-low transition-colors group">
+<span class="material-symbols-outlined text-brand-urgent mb-4 scale-150 block origin-left">engineering</span>
+<h3 class="font-headline-lg text-headline-lg mb-4 text-[24px]">Instalações</h3>
+<p class="font-body-md text-on-surface-variant">Execução de quadros de força, redes de baixa e média tensão com diagramas unifilares detalhados.</p>
+<ul class="mt-6 space-y-2 font-label-mono text-sm opacity-60 group-hover:opacity-100 transition-opacity">
+<li>+ Balanceamento de Carga</li>
+<li>+ Certificação Técnica</li>
+</ul>
+</div>
+<div class="flat-outline p-10 bg-on-background text-white hover:bg-brand-urgent transition-colors group">
+<span class="material-symbols-outlined text-white mb-4 scale-150 block origin-left" style="font-variation-settings: 'FILL' 1;">warning</span>
+<h3 class="font-headline-lg text-headline-lg mb-4 text-[24px]">Manutenção</h3>
+<p class="text-surface-variant">Preventiva e corretiva para sistemas comerciais e industriais. Diagnóstico térmico por infravermelho.</p>
+<ul class="mt-6 space-y-2 font-label-mono text-sm opacity-60 group-hover:opacity-100 transition-opacity">
+<li>+ Atendimento Rápido</li>
+<li>+ Laudo de Conformidade</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Precision Divider -->
+<section class="w-full bg-on-background py-20 overflow-hidden relative">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row gap-gutter items-center">
+<div class="w-full md:w-1/2">
+<div class="bg-cover bg-center w-full aspect-video grayscale" data-alt="A high-contrast, professional macro photograph of copper wires and modern circuit breakers in an electrical panel. The lighting is sharp and technical, emphasizing precision and safety. The color palette is dominated by deep blacks, metallic greys, and the bright red of the circuit switches. The mood is expert, industrial, and highly reliable." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCN88MKl9j1HBsL7lWqlO78MUDIGNnH5_hrHZ-RUmkCJJVFXAq17cXqEz0F61RyAL3YmINdUuuoMsIx5SAKr62X1ZZqTxAyGYom6p7Ca0EHcJorX8WMeaqH7RCl8_8f01LoU5cllfd0EJ-96kDqUXMsUdbutyp7YsQpCPUdFvPefaTJpOiHpjhizBx3kDTypKJy8fDOieYTcLLLzsFyV4Yst3QH95o2db-h3uHvFUpniusUPnZCGBbyIQIaxh76xnQFsk04MFh7e1rK')"></div>
+</div>
+<div class="w-full md:w-1/2 text-white p-margin-mobile">
+<span class="font-label-mono text-brand-urgent block mb-4">SEGURANÇA GARANTIDA</span>
+<h2 class="font-headline-lg text-headline-lg uppercase mb-6 leading-none">Precisão Milimétrica. <br/>Risco Zero.</h2>
+<p class="font-body-lg text-surface-variant">
+                        Cada conexão é testada individualmente. Utilizamos ferramentas de última geração para garantir que sua rede elétrica suporte as demandas do futuro sem interrupções.
+                    </p>
+</div>
+</div>
+<!-- Decorative line -->
+<div class="absolute top-0 right-0 w-1/4 h-full bg-brand-urgent/10 -skew-x-12 translate-x-1/2"></div>
+</section>
+<!-- Emergency / Conversion -->
+<section class="py-section-gap max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop" id="contato">
+<div class="flex flex-col md:flex-row justify-between items-end gap-gutter">
+<div class="max-w-2xl text-left">
+<h2 class="font-display-xl text-display-xl uppercase leading-none mb-8">Pronto para resolver agora?</h2>
+<p class="font-body-lg text-on-surface-variant mb-10">
+                        Atendemos residências de alto padrão, escritórios e parques industriais em toda a grande São Paulo. Seu problema elétrico termina aqui.
+                    </p>
+</div>
+<div class="flex flex-col items-end">
+<a class="group flex items-center gap-6 text-brand-urgent hover:text-on-background transition-all" href="https://wa.me/5511963080179">
+<div class="text-right">
+<span class="block font-label-mono text-sm uppercase opacity-60">Fale no WhatsApp</span>
+<span class="block font-headline-lg text-headline-lg">(11) 96308-0179</span>
+</div>
+<div class="w-16 h-16 bg-brand-urgent text-white flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">chat</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-on-background w-full relative">
+<div class="border-t-2 border-primary"></div>
+<div class="flex flex-col md:flex-row justify-between items-start px-margin-mobile md:px-margin-desktop py-section-gap max-w-container-max mx-auto gap-gutter">
+<div class="flex flex-col gap-6">
+<div class="font-headline-lg text-headline-lg text-primary-fixed">Eletricista Silva</div>
+<p class="font-label-mono text-surface-variant/60 max-w-xs">
+                    © 2024 Eletricista Silva. Alta Engenharia Elétrica em São Paulo. CNPJ 00.000.000/0001-00
+                </p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter w-full md:w-auto">
+<a class="font-label-mono text-surface-variant/60 hover:text-white transition-opacity uppercase" href="#">WhatsApp</a>
+<a class="font-label-mono text-surface-variant/60 hover:text-white transition-opacity uppercase" href="#">Instagram</a>
+<a class="font-label-mono text-surface-variant/60 hover:text-white transition-opacity uppercase" href="#">LinkedIn</a>
+<a class="font-label-mono text-surface-variant/60 hover:text-white transition-opacity uppercase" href="#">Termos de Serviço</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll reveal interaction
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body></html>
